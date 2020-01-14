@@ -1,3 +1,5 @@
+# react-model-provider
+
 ```
 const cats = [
     {
@@ -20,7 +22,7 @@ const cats = [
         toys: [
             {
                 id: 1,
-                name: "Catnip Mousey",   
+                name: "Catnip Mousey",
             },
         ]
 
@@ -31,7 +33,7 @@ const cats = [
 Given some information about the data's structure, can be normalized with:
 
 ```
-    const { 
+    const {
         models: cats,
         childModels: toys,
     } = normalizeChildModels(cats, 'toys', 'toyIds');
@@ -59,7 +61,7 @@ const models = {
     1: {
       id: 1,
       name: "Catnip Mousey",
-      priority: 3,   
+      priority: 3,
     },
     2: {
       id: 2,
